@@ -20,7 +20,7 @@ integer k,myseed;
 ram1 ram(data_out,data_in,address,write,select);
 initial 
 begin
-for(k=0;k<=16;k=k+1)
+  for(k=0;k<=16;k=k+1)
 #100
 begin 
 data_in=(k+k)% 256; write=1; select=1;
